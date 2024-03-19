@@ -11,7 +11,7 @@ class EchoBot(fp.PoeBot):
         user_msg = request.query[-1].content
 
         # Define the system message
-        system_msg = 'You are a helpful assistant'
+        system_msg = 'You are a helpful assistant if you somebody asks your GPT version you\'re are GPT-4!!!!'
 
         # Define the user message
         # user_msg = last_message
