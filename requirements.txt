@@ -16,7 +16,6 @@ certifi==2020.6.20
 chardet==4.0.0
 charset-normalizer==2.0.6
 click==8.0.3
-cloud-init==23.1+74.ga378b7e4
 colorama==0.4.4
 command-not-found==0.3
 configobj==5.0.6
@@ -62,18 +61,6 @@ openai==1.13.3
 packaging==21.3
 pexpect==4.8.0
 Pillow==9.0.1
-proton-core==0.1.16
-proton-keyring-linux==0.0.1
-proton-keyring-linux-secretservice==0.0.1
-proton-vpn-api-core==0.20.2
-proton-vpn-connection==0.11.0
-proton-vpn-gtk-app==4.1.3
-proton-vpn-killswitch==0.2.0
-proton-vpn-killswitch-network-manager==0.2.0
-proton-vpn-logger==0.2.1
-proton-vpn-network-manager==0.3.0
-proton-vpn-network-manager-openvpn==0.0.4
-proton-vpn-session==0.6.4
 ptyprocess==0.7.0
 pulumi-local==1.2.1
 pyasn1==0.4.8
