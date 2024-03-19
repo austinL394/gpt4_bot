@@ -3,7 +3,7 @@ import openai
 import os
 
 # Set your OpenAI API key
-openai.api_key = os.getenv("OPEN_AI_KEY")
+openai.api_key = str(os.getenv("OPEN_AI_KEY"))
 
 
 class EchoBot(fp.PoeBot):
