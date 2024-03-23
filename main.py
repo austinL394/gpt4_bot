@@ -42,9 +42,20 @@ class ClaudeBot(fp.PoeBot):
         system_prompt = "All your responses should be in Haiku form"
 
         messages = request.query
+        
+        json_messages = []
+
+        # Iterate over the ProtocolMessage objects and create JSON objects
+        for message in protocol_messages:
+            json_object = {
+                "role": message.role,
+                "content": message.content
+            }
+            json_messages.append(json_object)
+
 
         body = json.dumps({
-                    "messages": messages,
+                    "messages": json_messages,
                     "system": system_prompt,
                     "max_tokens": max_tokens_to_generate,
                     "temperature": temperature,
