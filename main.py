@@ -19,6 +19,8 @@ class GPTBot(fp.PoeBot):
 
 class ClaudeBot(fp.PoeBot):
     async def get_response(self, request: fp.QueryRequest):
+        AWS_KEY = str(os.getenv("AWS_ACCESS_KEY"))
+        AWS_SECRET_KEY = str(os.getenv("AWS_SECRET_ACCESS_KEY"))
        
         bedrock_runtime = boto3.client(service_name='bedrock-runtime', 
             region_name='us-east-1', 
