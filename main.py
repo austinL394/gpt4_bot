@@ -67,7 +67,7 @@ class ClaudeBot(fp.PoeBot):
 
         response_body = json.loads(response.get('body').read())
         result = response_body.get('content', '')
-        yield fp.PartialResponse(text=result)
+        yield fp.PartialResponse(text=result[0]['text'])
 
 if __name__ == "__main__":
     if model_type == "GPT":
