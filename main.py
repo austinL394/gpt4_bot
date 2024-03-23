@@ -63,6 +63,9 @@ class ClaudeBot(fp.PoeBot):
                     "anthropic_version": "bedrock-2023-05-31"
         })
 
+        print('input_messages')
+        print(json_messages)
+
         response = bedrock_runtime.invoke_model(body=body, modelId=modelId, accept="application/json", contentType="application/json")
 
         response_body = json.loads(response.get('body').read())
