@@ -46,7 +46,7 @@ class ClaudeBot(fp.PoeBot):
         json_messages = []
 
         # Iterate over the ProtocolMessage objects and create JSON objects
-        for message in messagess:
+        for message in messages:
             json_object = {
                 "role": message.role,
                 "content": message.content
